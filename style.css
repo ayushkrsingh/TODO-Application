@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1.heading{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.form-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+    align-items: center;
+    border-radius: 3rem;
+    border: 3px solid #da6affb5;
+    background-color: #f6daff;
+    /* background-color: blue; */
+}
+.todo-title-input{
+    width: 100%;
+    height: 3.2rem;
+    /* padding: 0 1.2rem; */
+    color: #8800b5;
+    outline: none;
+    background: transparent;
+    font-size: 1.2rem;
+    border: none;
+}
+.submit-button{
+    text-decoration: none;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #8800b5;
+    border-radius: 3rem;
+    padding: .7rem 3rem;
+    border: none;
+    background: #da6aff54;
+    transition: .2s all ease;
+}
+.submit-button:hover{
+    background: #8c00ba52;
+    color: black;
+}
+.todo-list{
+    /* background-color: rebeccapurple; */
+
+}
+ul{
+    /* background-color: red; */
+    padding: .5rem;
+}
+
+ul li.list-item{
+    list-style: none;
+    margin-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8200ae;
+    padding: .5rem 2rem;
+    border-radius: 9rem;
+}
+.todo-text{
+    color: white;
+    font-size: 1.4rem;
+}
+.remove{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}

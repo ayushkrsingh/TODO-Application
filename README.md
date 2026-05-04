@@ -1,1 +1,1 @@
-This app is a practical example of other JS concepts including those from repo:- javascript-tutorials.
+This app is a practical example of other JS concepts including those from repo:- javascript_tutorials.

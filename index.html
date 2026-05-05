@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./app.js" defer></script>
+    <script src="./app.js" defer type="module"></script>
+    <!-- <script src="./render.js" defer type="module"></script> -->
     <link rel="stylesheet" href="style.css">
     <title>TODO App</title>
 </head>
@@ -11,12 +12,12 @@
     <h1 class="heading">TODO LIST</h1>
     <div class="container">
         <form class="form-body">
-            <input type="text" class="todo-title-input" placeholder="Todo Title"/>
+            <input type="text" class="todo-title-input" placeholder="Todo Title" required/>
             <button type="submit" class="submit-button btn">ADD</button>
         </form>
         <div class="todo-list">
             <ul id="list">
-                <!-- <li class="list-item">
+                <!-- <li class="list-item" data-id="1">
                     <span class="todo-text">heyyds</span>
                     <div class="list-actions">
                         <input type="checkbox" class="checkbox"/>

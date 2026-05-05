@@ -114,6 +114,7 @@ ul li{
 }
 .remove{
     color: #ffffff;
+    user-select: none;
     font-size: 3.5rem;
     font-weight: bolder;
     cursor: pointer;

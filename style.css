@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: monospace;
+}
 
 h1.heading{
     text-align: center;
@@ -35,6 +38,7 @@ h1.heading{
     outline: none;
     background: transparent;
     font-size: 1.2rem;
+    font-family: monospace; 
     border: none;
 }
 .submit-button{
@@ -46,6 +50,8 @@ h1.heading{
     border-radius: 3rem;
     padding: .7rem 3rem;
     border: none;
+    font-family: monospace;
+    letter-spacing: .1em;
     background: #da6aff54;
     transition: .2s all ease;
 }
@@ -54,14 +60,9 @@ h1.heading{
     color: black;
 }
 .todo-list{
-    /* background-color: rebeccapurple; */
+    margin: .5rem 0;
 
 }
-ul{
-    /* background-color: red; */
-    padding: .5rem;
-}
-
 ul li.list-item{
     list-style: none;
     margin-bottom: .8rem;
@@ -76,9 +77,45 @@ ul li.list-item{
     color: white;
     font-size: 1.4rem;
 }
+.checkbox {
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border: 4px solid white;
+    background: transparent;
+    border-radius: 4rem;
+    cursor: pointer;
+    position: relative;
+    top: -3px;
+    margin-right: 1rem;
+    transition: .07s all ease;
+}
+.checkbox:hover{
+    background-color: #ffffff4b;
+}
+.checkbox:checked {
+    background: white;
+}
+.checkbox:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #8200ae;
+    font-size: 14px;
+    font-weight: bold;
+}
 .remove{
-    color: white;
-    font-size: 2.5rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 3.5rem;
     font-weight: bolder;
+    cursor: pointer;
+    padding: 0 1rem;
+    text-shadow: 0 #00000000;
+    transition: .1s all;
+}
+.remove:hover{
+    text-shadow: 2px 2px 4px #00000080;
+    color: #f6daff;
 }

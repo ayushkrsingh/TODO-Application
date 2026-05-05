@@ -10,6 +10,8 @@ body{
 h1.heading{
     text-align: center;
     margin-top: 5%;
+    font-size: 2.6rem;
+    color: #8200ae;
 }
 
 .container{
@@ -63,7 +65,7 @@ h1.heading{
     margin: .5rem 0;
 
 }
-ul li.list-item{
+ul li{
     list-style: none;
     margin-bottom: .8rem;
     display: flex;
@@ -76,6 +78,10 @@ ul li.list-item{
 .todo-text{
     color: white;
     font-size: 1.4rem;
+}
+.decor{
+    color: #3dff0d;
+    text-decoration: line-through;
 }
 .checkbox {
     appearance: none;
